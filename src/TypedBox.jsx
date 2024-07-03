@@ -25,7 +25,7 @@ const TypedBox = () => {
       setWarning(false);
     }
   };
-  
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -37,6 +37,7 @@ const TypedBox = () => {
         ></textarea>
         <div>
           <p>Character remaining : {count}</p>
+          <p>Characters</p>
           {warning && (
             <p style={{ color: "red" }}>Remaining characters are 10</p>
           )}
